@@ -1,6 +1,6 @@
 # Inference-Acceleration-using-speculative-decoding
 
-# This repo is inspired from the paper by Google Deepmind
+## This repo is inspired from the paper by Google Deepmind
 ## 
     # https://arxiv.org/pdf/2302.01318
 
@@ -8,14 +8,14 @@ Run the file using
 ##
     python generate.py -h
 
-# Autoregressive Decoding
+## Autoregressive Decoding
 ##
     python main.py  --method autoregressive \
                     --prompt "Describe how a neural network is trained using backpropagation, and explain the significance of each step." \
                     --max_new_tokens 128 \
                     --temperature 0.1
 
-# Speculative Decoding
+## Speculative Decoding
 ##
     python main.py  --method speculative \
                     --prompt "Describe how a neural network is trained using backpropagation, and explain the significance of each step." \
