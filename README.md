@@ -4,7 +4,7 @@
 ## 
     # https://arxiv.org/pdf/2302.01318
 
-Run the file using
+## Run the file using
 ##
     python generate.py -h
 
@@ -21,17 +21,17 @@ Run the file using
                     --prompt "Describe how a neural network is trained using backpropagation, and explain the significance of each step." \
                     --max_new_tokens 128 \
                     --temperature 0.1
-# How to improve the performance of your speculative decoding technique
+## How to improve the performance of your speculative decoding technique
 
 1. The draft model must be significantly small compared to that of the target model.
 2. Both models should use the same tokenizer
 3. Efficient batching can improve performance however may lead to memory management issues.
 
-# Advantages
+## Advantages
 
 1. Speculative Sampling offers a 1.5X - 3.0X speedup on naive autoregression
 
-# Caveats
+## Caveats
 
 1. The size of the draft model if is comparable to the target model can reduce speed due to significant overhead by the draft model.
 2. Using different tokenizers for both models will drastically decrease performance
